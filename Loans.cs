@@ -5,14 +5,16 @@
 
 public class Loans
 {
-    private int Amount {get; set;}
-    private int Instalment {get; set;}
-    private string StartDate {get; set;}
-    private string EndDate {get; set;}
-    public Loans(int amount, int instalment, string startdate, string enddate){
+    private Clients Clients {get;}
+    public double Amount {get; set;}
+    public double Instalment {get; set;}
+    public string StartDate {get; set;}
+    public string EndDate {get; set;}
+    public Loans(double amount, double instalment, string startdate, string enddate, Clients clients){
         Amount = amount;
         Instalment = instalment;
         StartDate = startdate;
         EndDate = enddate;
+        Clients = clients; 
     }
 }
